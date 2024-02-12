@@ -1,0 +1,2482 @@
+@font-face {
+    font-family: "valorant";
+    src: url(Fonts/ValorantFont.ttf);
+}
+
+@font-face {
+    font-family: "tungsten";
+    src: url(./Fonts/Tungsten-Bold.ttf);
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    z-index: 1;
+}
+
+h2,
+h3 {
+    font-family: "tungsten", Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: white;
+    font-family: "valorant", Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    text-align: center;
+    margin: 0;
+    margin-left: 8em;
+    margin-top: 0.25em;
+}
+
+header nav a {
+    color: white;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin-left: 2em;
+}
+
+#home header ul {
+    animation-name: invliegenboven;
+    animation-duration: 1s
+}
+
+@keyframes invliegenboven {
+    0% {
+        transform: translateY(-20em);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+header li {
+    padding: 0px 10px;
+}
+
+header li a {
+    text-decoration: none;
+    transition: all 250ms ease;
+    position: relative;
+}
+
+header li a:after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    width: 0%;
+    background: #F24957;
+    transition: 500ms;
+}
+
+.activepage::after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #F24957;
+}
+
+header li a:hover:after,
+header li a:focus:after {
+    width: 100%;
+}
+
+/******************/
+/******************/
+/* HOMEPAGE */
+/******************/
+/******************/
+
+video {
+    position: relative;
+    width: 100vw;
+    margin-top: 5em;
+    display: block;
+}
+
+section:first-of-type {
+    background-color: #EBE8E1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section:first-of-type h3 {
+    display: none;
+}
+
+article {
+    display: block;
+    background-color: #0D0D0D;
+    width: 18em;
+    height: 43em;
+    border-radius: 20px;
+    margin: 2em;
+}
+
+#home article {
+    animation-name: invliegenonder;
+    animation-duration: 2s;
+}
+
+@keyframes invliegenonder {
+    0% {
+        transform: translateY(20em);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+article div {
+    padding: 0px 5px;
+    margin: 2em;
+}
+
+article img {
+    width: 100%;
+    border-radius: 20px;
+    height: 24em;
+    object-fit: cover;
+}
+
+article p {
+    color: white;
+}
+
+article ul {
+    color: white;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+}
+
+section:first-of-type article:nth-of-type(2) ul {
+    margin-bottom: 4.25em;
+}
+
+section:first-of-type article:nth-of-type(4) ul {
+    margin-bottom: 3em;
+}
+
+article a {
+    color: white;
+    text-decoration: none;
+    background-color: #F24957;
+    padding: 1em 3em;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.25s ease;
+    text-align: center;
+}
+
+article a:hover,
+article a:focus {
+    color: #F24957;
+    background-color: #EBE8E1;
+}
+
+img {
+    width: 10%;
+}
+
+section:nth-of-type(2) {
+    background-color: #F24957;
+    color: #EBE8E1;
+    width: 100vw;
+    height: 100vh;
+}
+
+section:nth-of-type(2) a {
+    background-color: #EBE8E1;
+    color: #111111;
+
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+
+    width: 8em;
+
+    padding: 1em 3em;
+    margin-left: 4em;
+    margin-top: 2em;
+
+    border-radius: 10px;
+
+    display: block;
+
+    transition: all 250ms ease;
+}
+
+section:nth-of-type(2) a:hover,
+section:nth-of-type(2) a:focus {
+    background-color: #111111;
+    color: white;
+    text-decoration: none;
+}
+
+section:nth-of-type(2) div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+section:nth-of-type(2) img:first-of-type {
+    width: 55vw;
+    margin-right: -15em;
+    margin-top: -14em;
+}
+
+section:nth-of-type(2) img:nth-of-type(2) {
+    width: 28vw;
+    height: 98vh;
+    margin-top: -23em;
+}
+
+section:nth-of-type(2) h2 {
+    margin-left: 1em;
+    padding-top: 1em;
+}
+
+section:nth-of-type(2) li {
+    margin-left: 1.5em;
+    font-family: "tungsten", Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+section:nth-of-type(3) {
+    background-color: #EBE8E1;
+    margin-top: -3em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+section:nth-of-type(3) h3 {
+    margin-right: 1em;
+    padding-top: 1em;
+}
+
+section:nth-of-type(3) div {
+    display: flex;
+    flex-direction: column;
+}
+
+section:nth-of-type(3) p {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2em;
+    font-size: 2em;
+    font-family: "tungsten", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+section:nth-of-type(3) a {
+    background-color: #F24957;
+    padding: 1em 3em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 6.5em;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 5em;
+    margin-right: 11em;
+    margin-top: 2em;
+    transition: all 250ms ease;
+    width: 8em;
+}
+
+section:nth-of-type(3) a:hover,
+section:nth-of-type(3) a:focus {
+    background-color: #111111;
+    color: white;
+    text-decoration: none;
+}
+
+section:nth-of-type(3) img {
+    margin-left: 4em;
+    width: 40vw;
+    margin-top: 5em;
+    margin-bottom: 15em;
+}
+
+section:last-of-type {
+    background-color: #F24957;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section:last-of-type h3 {
+    margin-left: 1em;
+    padding-top: 1em;
+}
+
+section:last-of-type span {
+    text-decoration: underline;
+    color: #ECE8E1;
+}
+
+section:last-of-type a {
+    background-color: #EBE8E1;
+    display: block;
+    padding: 1em 3em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 3.7em;
+    margin-top: 4em;
+    color: #111111;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 8em;
+    transition: all 250ms ease;
+}
+
+section:last-of-type a:hover,
+section:last-of-type a:focus {
+    background-color: #111111;
+    color: white;
+    text-decoration: none;
+}
+
+section:last-of-type p {
+    margin-left: 1.9em;
+    font-size: 2em;
+    font-family: "tungsten", Arial, Helvetica, sans-serif;
+}
+
+section:last-of-type img {
+    margin-right: 4em;
+    margin-top: 5em;
+    margin-bottom: 15em;
+
+    width: 40vw;
+}
+
+footer {
+    display: block;
+    width: 100vw;
+    height: 20vh;
+    background-color: #111111;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul li {
+    color: white;
+    list-style: none;
+}
+
+/******************/
+/******************/
+/* AGENTS */
+/******************/
+/******************/
+
+#sectionagents {
+    background-color: #ECE8E1;
+    margin-top: 5em;
+}
+
+#sectionagents h2 {
+    font-size: 8em;
+    color: #F24957;
+
+    margin-left: .5em;
+    margin-top: .25em;
+}
+
+
+#sectionagents a {
+    background-color: #F24957;
+    color: white;
+    text-decoration: none;
+    padding: 1em 3em;
+    text-align: center;
+    border-radius: 0px;
+    border: solid #ECE8E1;
+    margin-left: 0;
+}
+
+#sectionagents a:nth-of-type(2) {
+    background-color: #0D0D0D;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0px;
+    border: solid #ECE8E1;
+    margin-left: 0;
+}
+
+#sectionagents a:nth-of-type(2):hover,
+#sectionagents a:nth-of-type(2):focus {
+    background-color: white;
+    color: #F24957;
+    border: #F24957 solid;
+}
+
+
+#sectionagents div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+    margin-bottom: 3em;
+}
+
+.articleagents {
+    display: flex;
+    background-color: #0D0D0D;
+    width: 75vw;
+    height: 30vh;
+    border-radius: 5vw;
+    margin-top: 3em;
+    margin-left: 3em;
+}
+
+#sectionagents article div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+
+#sectionagents article ul {
+    columns: 2;
+    margin-left: -2em;
+}
+
+#sectionagents article li {
+    margin-right: 2em;
+}
+
+.articleagents:hover li {
+    list-style: square;
+}
+
+.articleagents:hover li::marker {
+    animation-name: draaiendlist;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes draaiendlist {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#sectionagents article p {
+    margin-left: 0;
+    margin-top: 1em;
+    padding-bottom: .25em;
+}
+
+.agents .articleagents img {
+    width: 40%;
+    height: 100%;
+    border-radius: 5vw;
+    margin-top: 0;
+
+}
+
+.articleagents p {
+    color: white;
+}
+
+.articleagents li {
+    color: white;
+}
+
+#sectionagents article a {
+    background-color: #F24957;
+    height: 1.25em;
+    border: none;
+    border-radius: 10px;
+
+    width: 6em;
+
+    margin-top: -1em;
+}
+
+#sectionagents article div:last-of-type {
+    margin-left: 2em;
+}
+
+#sectionagents article a:hover,
+#sectionagents article a:focus {
+    background-color: #ECE8E1;
+    color: #F24957;
+    height: 1.25em;
+    border: none;
+    border-radius: 10px;
+}
+
+#sectionagents article:last-of-type {
+    margin-bottom: 6em;
+}
+
+#sectionagents .backtotop {
+    color: white;
+    background-color: #F24957;
+    border-radius: 25px;
+    margin: 0;
+}
+
+#sectionagents .backtotop:hover,
+#sectionagents .backtotop:focus {
+    color: white;
+    background: linear-gradient(45deg, #f24957, #D1447F, #9D4F94, #2F4858);
+    animation-name: gradient;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: 0%;
+    }
+}
+
+#sectionagents .backtotop::after {
+    content: "↑";
+    margin-left: .5em;
+}
+
+/******************/
+/******************/
+/* MAPS */
+/******************/
+/******************/
+
+#sectionmaps {
+    background-color: #ECE8E1;
+    margin-top: 5em;
+}
+
+#sectionmaps h2 {
+    font-size: 8em;
+    color: #F24957;
+
+    margin-left: .5em;
+    margin-top: .25em;
+}
+
+#sectionmaps a {
+    background-color: #0D0D0D;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0px;
+    border: solid #ECE8E1;
+    margin-left: 0;
+}
+
+#sectionmaps a:hover,
+#sectionmaps a:focus {
+    background-color: white;
+    color: #F24957;
+    border: #F24957 solid;
+}
+
+#sectionmaps a:nth-of-type(2) {
+    background-color: #F24957;
+    color: white;
+    text-decoration: none;
+    padding: 1em 3em;
+    text-align: center;
+    border-radius: 0px;
+    border: solid #ECE8E1;
+    margin-left: 0;
+}
+
+#sectionmaps a:nth-of-type(2):hover,
+#sectionmaps a:nth-of-type(2):focus {
+    background-color: #F24957;
+    color: white;
+    text-decoration: none;
+    padding: 1em 3em;
+    text-align: center;
+    border-radius: 0px;
+    border: solid #ECE8E1;
+    margin-left: 0;
+}
+
+#sectionmaps div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+    margin-bottom: 3em;
+}
+
+.articleagents {
+    display: flex;
+    background-color: #0D0D0D;
+    width: 75vw;
+    height: 30vh;
+    border-radius: 5vw;
+    margin-top: 3em;
+    margin-left: 3em;
+}
+
+#sectionmaps article div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+
+#sectionmaps article ul {
+    columns: 2;
+    margin-left: -2em;
+    margin-bottom: 0;
+}
+
+#sectionmaps article li {
+    margin-right: 2em;
+}
+
+.articleagents:hover li {
+    list-style: square;
+}
+
+.articleagents:hover li::marker {
+    animation-name: draaiendlist;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes draaiendlist {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#sectionmaps article p {
+    margin-left: 0;
+    margin-top: .5em;
+    padding-bottom: .25em;
+}
+
+#sectionmaps .articleagents img {
+    width: 40%;
+    height: 100%;
+    border-radius: 5vw;
+    margin-top: 0;
+
+}
+
+.articleagents p {
+    color: white;
+}
+
+.articleagents li {
+    color: white;
+}
+
+#sectionmaps article a {
+    background-color: #F24957;
+    height: 1.25em;
+    border: none;
+    border-radius: 10px;
+
+    width: 6em;
+
+    margin-top: -1em;
+}
+
+#sectionmaps article div:last-of-type {
+    margin-left: 2em;
+}
+
+#sectionmaps article a:hover,
+#sectionagents article a:focus {
+    background-color: #ECE8E1;
+    color: #F24957;
+    height: 1.25em;
+    border: none;
+    border-radius: 10px;
+}
+
+#sectionmaps article:last-of-type {
+    margin-bottom: 6em;
+}
+
+#sectionmaps .backtotop {
+    color: white;
+    background-color: #F24957;
+    border-radius: 25px;
+    margin: 0;
+    border: none;
+}
+
+#sectionmaps .backtotop:hover,
+#sectionmaps .backtotop:focus {
+    color: white;
+    background: linear-gradient(45deg, #f24957, #D1447F, #9D4F94, #2F4858);
+    animation-name: gradient;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    background-size: 400% 400%;
+    border: none;
+}
+
+#sectionmaps .backtotop::after {
+    content: "↑";
+    margin-left: .5em;
+}
+
+/******************/
+/******************/
+/* TIPS & TRICKS */
+/******************/
+/******************/
+
+#tipsandtricks {
+    background-color: #ECE8E1;
+    color: white;
+}
+
+#tipsandtricks h2 {
+    font-size: 8em;
+    color: #F24957;
+
+    margin-left: .5em;
+    margin-top: .9em;
+}
+
+#tipsandtricks p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+#tipsandtricks section {
+    background-color: #ECE8E1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#tipsandtricks section:first-of-type {
+    margin-top: -4em;
+    margin-left: 3.5em;
+    margin-bottom: 2em;
+}
+
+#tipsandtricks select {
+    border-radius: 5px;
+    padding: .5em 1.5em;
+}
+
+#tipsandtricks section:nth-of-type(2) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+#tipsandtricks article {
+    width: 25em;
+    height: 20em;
+    border-radius: 10px;
+}
+
+#tipsandtricks article video {
+    width: 100%;
+    height: 15em;
+
+    margin-top: 0;
+    margin-bottom: 1em;
+
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#tipsandtricks article li::marker {
+    color: orange;
+}
+
+#tipsandtricks article:nth-of-type(2) li::marker {
+    color: greenyellow;
+}
+
+#tipsandtricks article:nth-of-type(3) li::marker {
+    color: yellow;
+}
+
+#tipsandtricks article:nth-of-type(4) li::marker {
+    color: greenyellow;
+}
+
+#tipsandtricks article:nth-of-type(5) li::marker {
+    color: red;
+}
+
+#tipsandtricks article:nth-of-type(6) li::marker {
+    color: yellow;
+}
+
+#tipsandtricks article:nth-of-type(7) li::marker {
+    color: red;
+}
+
+#tipsandtricks article:nth-of-type(9) li::marker {
+    color: greenyellow;
+}
+
+#tipsandtricks article li {
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#tipsandtricks article div {
+    display: flex;
+    justify-content: flex-start;
+    margin: .75em 0em 0em -1em;
+}
+
+#tipsandtricks article p:last-child {
+    font-size: medium;
+}
+
+select {
+    margin-top: 10em;
+    background-color: #F24957;
+    color: white;
+    padding: 0.5em;
+    border: none;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+/******************/
+/******************/
+/* FIND PLAYERS */
+/******************/
+/******************/
+
+#findplayers {
+    background-color: #ECE8E1;
+}
+
+#findplayers h2 {
+    font-size: 8em;
+    color: #F24957;
+    margin-left: 0.5em;
+    margin-top: 0.9em;
+}
+
+#findplayers section {
+    background-color: #ECE8E1;
+    width: auto;
+    height: auto;
+}
+
+
+#findplayers section:first-of-type {
+    margin-left: 4em;
+    margin-top: -4em;
+}
+
+#findplayers select {
+    border-radius: 5px
+}
+
+#findplayers section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+#findplayers article div {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    margin-left: 0;
+}
+
+#findplayers section article {
+    display: flex;
+    align-items: center;
+    background-color: #0D0D0D;
+    width: 90vw;
+    height: 30vh;
+    border-radius: 5vw;
+    margin-top: 3em;
+    margin-left: 3em;
+    transition: all 150ms ease;
+}
+
+#findplayers section article:hover,
+#findplayers section article:focus {
+    box-shadow: 10px 10px #F24957;
+
+}
+
+#findplayers article img {
+    width: 13em;
+    height: 13em;
+    margin: 0;
+    margin-left: 2em;
+    border-radius: 50%
+}
+
+#findplayers .mainagent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100vw;
+}
+
+#findplayers .mainagent img {
+    background-color: #F24957;
+    border-radius: 20px;
+    margin: .5em;
+    width: 8em;
+    height: 8em;
+}
+
+#findplayers .mainagent img:last-of-type {
+    background-color: transparent;
+    border-radius: 20px;
+    margin: .5em;
+    width: 8em;
+    height: 8em;
+}
+
+/****************************/
+/****************************/
+/* RESPONSIVE HOME MAX 768PX*/
+/****************************/
+/****************************/
+
+@media only screen and (max-width: 768px) {
+
+    html {
+        background-color: #ECE8E1;
+    }
+
+    h1 {
+        font-size: 1em;
+        margin: 0;
+        margin-top: 0.25em;
+    }
+
+    #home header {
+        animation: invliegenboven;
+        animation-duration: 1s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #home h1 {
+        font-size: 1em;
+        margin: 0;
+        animation: invliegenboven;
+        animation-duration: 1s;
+        animation-delay: .5s;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    ul {
+        font-size: small;
+    }
+
+    header ul {
+        margin-top: 1em;
+        margin-right: 4em;
+        white-space: nowrap;
+    }
+
+    #home video {
+        display: none;
+    }
+
+    #home section:first-of-type {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        margin-top: 4em;
+    }
+
+    article {
+        display: block;
+        background-color: #0D0D0D;
+        width: 20em;
+        height: 30em;
+        border-radius: 20px;
+        margin: 2em;
+    }
+
+    #home article {
+        animation: invliegenrechts;
+        animation-duration: 3.5s;
+    }
+
+    @keyframes invliegenrechts {
+        0% {
+            transform: translateX(40em);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    #home article:last-of-type {
+        margin-right: 2em;
+    }
+
+    article div {
+        padding: 0px 5px;
+        margin: 2em;
+    }
+
+    article img {
+        width: 100%;
+        border-radius: 20px;
+        height: 50%;
+        object-fit: cover;
+    }
+
+    article p {
+        color: white;
+    }
+
+    article ul {
+        white-space: nowrap;
+    }
+
+    article a {
+        color: white;
+        text-decoration: none;
+        background-color: #F24957;
+        padding: .5em 2em;
+        border-radius: 5px;
+    }
+
+    img {
+        width: 10%;
+    }
+
+    section:nth-of-type(2) {
+        background-color: #F24957;
+        color: #EBE8E1;
+        width: 100vw;
+        height: 100vh;
+        animation-name: invliegenonder;
+        animation-duration: 6s;
+    }
+
+    section:nth-of-type(2) a {
+        margin-left: 2em;
+    }
+
+    section:nth-of-type(2) div {
+        display: flex;
+        justify-content: center;
+        margin-right: 2em;
+    }
+
+    section:nth-of-type(2) img:first-of-type {
+        width: 85vw;
+        height: 45vh;
+        margin-right: 0;
+        margin-top: 4.5em;
+    }
+
+    section:nth-of-type(2) img:nth-of-type(2) {
+        width: 40vw;
+        height: 50vh;
+        margin-top: 1em;
+        margin-left: -6em;
+    }
+
+    section:nth-of-type(2) h2 {
+        margin-left: 1em;
+        padding-top: 1em;
+        font-size: 2em;
+    }
+
+    section:nth-of-type(2) li {
+        margin-left: .25em;
+        font-family: "tungsten", Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+    }
+
+    section:nth-of-type(3) {
+        background-color: #EBE8E1;
+        margin-top: -3em;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+    }
+
+    section:nth-of-type(3) h3 {
+        margin-left: 1em;
+        font-size: 2em;
+    }
+
+    section:nth-of-type(3) div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section:nth-of-type(3) p {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5em;
+        text-align: left;
+        margin-left: 1.5em;
+    }
+
+    section:nth-of-type(3) a {
+        margin-left: 2em;
+        margin-bottom: 2em;
+        margin-right: 0;
+    }
+
+    section:nth-of-type(3) img {
+        margin-left: 1.5em;
+        width: 90vw;
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+
+    section:last-of-type h3 {
+        font-size: 2em;
+    }
+
+    section:last-of-type p {
+        font-size: 1.5em;
+        margin-left: 1.4em;
+        margin-top: .5em;
+    }
+
+    section:last-of-type a {
+        margin-top: 2em;
+        margin-left: 2em;
+    }
+
+    section:last-of-type img {
+        margin-top: 2em;
+        margin-left: 1.5em;
+        margin-bottom: 3em;
+        width: 90vw;
+    }
+}
+
+/****************************/
+/****************************/
+/* RESPONSIVE A&M MAX 425PX */
+/****************************/
+/****************************/
+
+@media only screen and (max-width: 425px) {
+
+    h1 {
+        font-size: 1em;
+        margin: 0;
+        margin-top: 0.25em;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1em;
+        margin: 0;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    ul {
+        font-size: small;
+    }
+
+    header ul {
+        margin-top: 1em;
+        margin-right: 4em;
+        white-space: nowrap;
+    }
+
+    #sectionagents {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #sectionagents h2 {
+        font-size: 4.5em;
+    }
+
+    #sectionagents a {
+        padding: .75em 1.5em;
+    }
+    
+    #sectionagents div {
+        margin-bottom: 0;
+    }
+
+    .articleagents {
+        display: flex;
+        flex-direction: column;
+        max-width: 90vw;
+        height: 50vh;
+        margin-top: 2em;
+    }
+
+    .agents .articleagents img {
+        width: 100%;
+        height: 45%;
+        margin: 0;
+    }
+
+    #sectionagents article div:nth-of-type(2) {
+        margin-left: 0;
+        margin-top: 2em;
+    }
+
+    #sectionagents article ul {
+        margin-bottom: 0;
+    }
+
+    #sectionagents article li {
+        margin-right: 0;
+    }
+
+    #sectionagents article a {
+        margin-left: 4.5em;
+    }
+
+    #sectionagents article:last-of-type {
+        margin-bottom: 2em;
+    }
+
+    #sectionagents .backtotop {
+        margin-bottom: 2em;
+    }
+
+}
+
+/****************************/
+/****************************/
+/* RESPONSIVE M&A MAX 425PX */
+/****************************/
+/****************************/
+
+@media only screen and (max-width: 425px) {
+
+    h1 {
+        font-size: 1em;
+        margin: 0;
+        margin-top: 0.25em;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1em;
+        margin: 0;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    ul {
+        font-size: small;
+    }
+
+    header ul {
+        margin-top: 1em;
+        margin-right: 4em;
+        white-space: nowrap;
+    }
+
+    #sectionmaps {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #sectionmaps h2 {
+        font-size: 4.5em;
+    }
+
+    #sectionmaps a {
+        padding: .75em 1.5em;
+    }
+
+    #sectionmaps a:nth-of-type(2) {
+        padding: .75em 1.5em;
+    }
+    
+    #sectionmaps div {
+        margin-bottom: 0;
+    }
+
+    #sectionmaps .articleagents {
+        display: flex;
+        flex-direction: column;
+        max-width: 90vw;
+        height: 55vh;
+        margin-top: 2em;
+    }
+
+    #sectionmaps .articleagents img {
+        width: 100%;
+        height: 45%;
+        margin: 0;
+    }
+
+    #sectionmaps article div:nth-of-type(2) {
+        margin-left: 0;
+        margin-top: 2em;
+    }
+
+    #sectionmaps article ul {
+        margin-bottom: 0;
+        columns: 1;
+    }
+
+    #sectionmaps article li {
+        margin-right: 0;
+    }
+
+    #sectionmaps article a {
+        margin-left: 4.5em;
+    }
+
+    #sectionmaps article:last-of-type {
+        margin-bottom: 2em;
+    }
+
+    #sectionmaps .backtotop {
+        margin-bottom: 2em;
+    }
+
+}
+
+/****************************/
+/****************************/
+/* RESPONSIVE T&T MAX 425PX */
+/****************************/
+/****************************/
+
+@media only screen and (max-width: 425px) {
+    h1 {
+        font-size: 1em;
+        margin: 0;
+        margin-top: 0.25em;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1em;
+        margin: 0;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    ul {
+        font-size: small;
+    }
+
+    header ul {
+        margin-top: 1em;
+        margin-right: 4em;
+        white-space: nowrap;
+    }
+
+    #tipsandtricks h2 {
+        font-size: 4.5em;
+        margin-top: 1.5em;
+    }
+
+    #tipsandtricks form {
+        margin-top: 5em;
+        margin-left: -1.5em;
+    }
+
+    #tipsandtricks select {
+        margin-top: 0;
+    }
+
+    #tipsandtricks select:nth-of-type(3), #tipsandtricks select:nth-of-type(4) {
+        margin-top: 1em;
+    }
+
+    #tipsandtricks section:nth-of-type(2) {
+        animation: none;
+    }
+
+    #tipsandtricks article div p {
+        margin-top: 0;
+    }
+
+    #tipsandtricks article {
+        width: 25em;
+        height: 21em;
+    }
+}
+
+/****************************/
+/****************************/
+/* RESPONSIVE FP MAX 425PX  */
+/****************************/
+/****************************/
+
+@media only screen and (max-width: 425px) {
+    h1 {
+        font-size: 1em;
+        margin: 0;
+        margin-top: 0.25em;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1em;
+        margin: 0;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    ul {
+        font-size: small;
+    }
+
+    header ul {
+        margin-top: 1em;
+        margin-right: 4em;
+        white-space: nowrap;
+    }
+
+    #findplayers h2 {
+        font-size: 4.5em;
+        margin-top: 1.5em;
+    }
+
+    #findplayers section:nth-of-type(2) {
+        animation: none;
+    }
+
+    #findplayers form {
+        margin-top: 5em;
+        margin-left: -2em;
+    }
+
+    #findplayers select {
+        margin-top: 0;
+    }
+
+    #findplayers .articlefindplayers {
+        display: flex;
+        flex-direction: column;
+        max-width: 90vw;
+        height: 60vh;
+        margin-top: 2em;
+        margin-left: 1.5em;
+    }
+
+    #findplayers .articlefindplayers img {
+        width: 100%;
+        border-radius: 10px;
+        margin-left: 0;
+    }
+
+    #findplayers .mainagent img {
+        width: 6em;
+        height: 6em;
+    }
+
+    #findplayers .mainagent img:last-of-type {
+        width: 6em;
+        height: 6em;
+    }
+
+    #findplayers .mainagent {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5em;
+    }
+
+    #findplayers .articlefindplayers strong {
+        font-size: 1.25em;
+        margin-right: 4.5em;
+    }
+
+}
+
+
+/****************************/
+/****************************/
+/* RESPONSIVE HOME MAX 768PX*/
+/****************************/
+/****************************/
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+
+    #home h1 {
+        font-size: 2em;
+        margin: 0;
+        margin-top: 0.25em;
+    }
+
+    #home section:first-of-type {
+        margin-top: 6em;
+    }
+
+    section:nth-of-type(2) {
+        height: 70vh;
+    }
+
+    section:nth-of-type(2) img:nth-of-type(2) {
+        margin-left: -10em;
+        margin-top: -1.5em;
+    }
+}
+
+/****************************/
+/****************************/
+/* RESPONSIVE A&M MAX 768PX */
+/****************************/
+/****************************/
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+
+    h1 {
+        font-size: 2em;
+        margin: 0;
+        margin-top: 0.25em;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sectionagents {
+        justify-content: center;
+    }
+
+    #sectionagents h2 {
+        font-size: 7em;
+        margin-left: 0;
+        margin-right: 1em;
+    }
+
+    #sectionagents a {
+        padding: 1em 2em;
+    }
+    
+    #sectionagents div {
+        margin-bottom: 0;
+    }
+
+    .articleagents {
+        display: flex;
+        flex-direction: column;
+        max-width: 90vw;
+        height: 50vh;
+        margin-top: 2em;
+    }
+
+    .agents .articleagents img {
+        width: 100%;
+        height: 55%;
+        margin: 0;
+    }
+
+    #sectionagents article div:nth-of-type(2) {
+        margin-left: 8em;
+        margin-top: -7em;
+        display: flex;
+        flex-direction: row;
+        width: 34em;
+    }
+
+    #sectionagents article li {
+        margin-right: .25em;
+        font-size: 1.25em;
+    }
+
+    #sectionagents article p {
+        font-size: 1.75em;
+    }
+
+    #sectionagents article a {
+        margin-left: 4.5em;
+    }
+
+    #sectionagents article:last-of-type {
+        margin-bottom: 2em;
+    }
+
+    #sectionagents .backtotop {
+        margin-bottom: 2em;
+    }
+
+}
+
+/****************************/
+/****************************/
+/* RESPONSIVE M&A MAX 768PX */
+/****************************/
+/****************************/
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+
+    h1 {
+        font-size: 2em;
+        margin: 0;
+        margin-top: 0.25em;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sectionmaps {
+        justify-content: center;
+    }
+
+    #sectionmaps h2 {
+        font-size: 7em;
+        margin-left: 0;
+        margin-right: 1em;
+    }
+
+    #sectionmaps a {
+        padding: 1em 2em;
+    }
+
+    #sectionmaps a:nth-of-type(2) {
+        padding: 1em 2em;
+    }
+    
+    #sectionmaps div {
+        margin-bottom: 0;
+    }
+
+    .articleagents {
+        height: 55vh;
+    }
+
+    #sectionmaps .articleagents img {
+        width: 100%;
+        height: 55%;
+        margin: 0;
+    }
+
+    #sectionmaps article div:nth-of-type(2) {
+        margin-left: 8em;
+        margin-top: -7em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #sectionmaps article li {
+        margin-right: .25em;
+        font-size: 1.25em;
+    }
+
+    #sectionmaps article p {
+        font-size: 1.75em;
+    }
+
+    #sectionmaps article a {
+        margin-left: 4.5em;
+    }
+
+    #sectionmaps article:last-of-type {
+        margin-bottom: 2em;
+    }
+
+    #sectionmaps .backtotop {
+        margin-bottom: 2em;
+    }
+
+}
+
+/****************************/
+/****************************/
+/* RESPONSIVE T&T MAX 768PX */
+/****************************/
+/****************************/
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+
+    #tipsandtricks h2 {
+        font-size: 7em;
+        margin-top: 1em;
+    }
+
+    #tipsandtricks section:first-of-type {
+        margin-top: -5em;
+    }
+    
+    #tipsandtricks section:nth-of-type(2) {
+        animation: none;
+    }
+
+    section:last-of-type p {
+        margin-top: 0;
+    }
+
+}
+
+/****************************/
+/****************************/
+/* RESPONSIVE FP MAX 768PX  */
+/****************************/
+/****************************/
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    ul {
+        font-size: small;
+    }
+
+    header ul {
+        margin-top: 1em;
+        margin-right: 4em;
+        white-space: nowrap;
+    }
+
+    #findplayers h2 {
+        font-size: 7em;
+        margin-top: 1em;
+    }
+
+    #findplayers section:nth-of-type(2) {
+        animation: none;
+        flex-direction: row;
+    }
+
+    #findplayers form {
+        margin-top: 5em;
+        margin-left: -2em;
+    }
+
+    #findplayers select {
+        margin-top: 0;
+    }
+
+    #findplayers .articlefindplayers {
+        display: flex;
+        flex-direction: column;
+        max-width: 40vw;
+        height: 60vh;
+        margin-top: 2em;
+        margin-left: 1.5em;
+    }
+
+    #findplayers .articlefindplayers:nth-of-type(2), #findplayers .articlefindplayers:nth-of-type(4), #findplayers .articlefindplayers:nth-of-type(6) {
+        margin-right: 2em;
+    }
+
+    #findplayers .articlefindplayers img {
+        width: 100%;
+        border-radius: 10px;
+        margin-left: 0;
+    }
+
+    #findplayers .mainagent img {
+        width: 60%;
+        height: 60%;
+    }
+
+    #findplayers .mainagent img:last-of-type {
+        width: 60%;
+        height: 60%;
+    }
+
+    #findplayers .mainagent {
+        display: flex;
+        justify-content: center;
+        margin-left: 3.5em;
+        width: 200px;
+    }
+
+    #findplayers .articlefindplayers strong {
+        font-size: 1.25em;
+        margin-right: 4.5em;
+    }
+
+    #findplayers article div:first-of-type {
+        margin-right: 0;
+    }
+
+}
+
+/****************************/
+/****************************/
+/*RESPONSIVE HOME MAX 1024PX*/
+/****************************/
+/****************************/
+
+@media only screen and (min-width: 769px) and (max-width: 1439px) {
+
+    html {
+        background-color: #ECE8E1;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin: 0;
+        margin-top: 0.25em;
+    }
+
+    #home header {
+        animation: invliegenboven;
+        animation-duration: 1s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #home h1 {
+        font-size: 3em;
+        margin: 0;
+        animation: invliegenboven;
+        animation-duration: 1s;
+        animation-delay: .5s;
+    }
+
+    p {
+        font-size: medium;
+    }
+
+    ul {
+        font-size: medium;
+    }
+
+    header ul {
+        margin-top: 1em;
+        margin-right: 4em;
+        white-space: nowrap;
+    }
+
+    #home section:first-of-type {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+    }
+
+    section:nth-of-type(2) {
+        height: 70vh;
+    }
+
+    section:nth-of-type(2) img:first-of-type {
+        height: 50vh;
+        margin-right: -12em;
+        margin-top: -9em;
+    }
+
+    section:nth-of-type(2) img:nth-of-type(2) {
+        height: 65vh;
+    }
+
+    section:last-of-type img {
+        margin-right: 0;
+        margin-left: 4em;
+        width: 60vw;
+        margin-bottom: 5em;
+    }
+
+}
+
+/****************************/
+/****************************/
+/* RESPONSIVE A&M MAX 1024PX*/
+/****************************/
+/****************************/
+
+@media only screen and (min-width: 769px) and (max-width: 1439px) {
+
+    html {
+        background-color: #ECE8E1;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin: 0;
+        margin-top: 0.25em;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    p {
+        font-size: medium;
+    }
+
+    ul {
+        font-size: medium;
+    }
+
+    header ul {
+        margin-top: 1em;
+        margin-right: 4em;
+        white-space: nowrap;
+    }
+
+    #sectionagents {
+        justify-content: center;
+    }
+
+    #sectionagents h2 {
+        margin-left: 0;
+        margin-right: 2em;
+        margin-top: .5em;
+    }
+
+    #sectionagents a {
+        padding: 1em 3em;
+    }
+    
+    #sectionagents div {
+        margin-bottom: 0;
+    }
+
+    .articleagents {
+        display: flex;
+        flex-direction: column;
+        max-width: 90vw;
+        height: 50vh;
+        margin-top: 2em;
+    }
+
+    .agents .articleagents img {
+        width: 100%;
+        height: 55%;
+        margin: 0;
+    }
+
+    #sectionagents article div:nth-of-type(2) {
+        margin-left: 8em;
+        margin-top: -7em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #sectionagents article li {
+        margin-right: .25em;
+        font-size: 1.25em;
+    }
+
+    #sectionagents article p {
+        font-size: 2em;
+    }
+
+    #sectionagents article a {
+        margin-left: 4.5em;
+    }
+
+    #sectionagents article:last-of-type {
+        margin-bottom: 4em;
+    }
+
+    #sectionagents .backtotop {
+        margin-bottom: 4em;
+    }
+
+}
+
+/****************************/
+/****************************/
+/* RESPONSIVE M&A MAX 1024PX*/
+/****************************/
+/****************************/
+
+@media only screen and (min-width: 769px) and (max-width: 1439px) {
+
+    html {
+        background-color: #ECE8E1;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin: 0;
+        margin-top: 0.25em;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    p {
+        font-size: medium;
+    }
+
+    ul {
+        font-size: medium;
+    }
+
+    header ul {
+        margin-top: 1em;
+        margin-right: 4em;
+        white-space: nowrap;
+    }
+
+    #sectionmaps {
+        justify-content: center;
+    }
+
+    #sectionmaps h2 {
+        margin-left: 0;
+        margin-right: 1em;
+        margin-top: .5em;
+    }
+
+    #sectionmaps a {
+        padding: 1em 3em;
+    }
+    
+    #sectionmaps div {
+        margin-bottom: 0;
+    }
+
+    .articleagents {
+        display: flex;
+        flex-direction: column;
+        max-width: 90vw;
+        height: 50vh;
+        margin-top: 2em;
+    }
+
+    #sectionmaps .articleagents img {
+        width: 100%;
+        height: 55%;
+        margin: 0;
+    }
+
+    #sectionmaps article div:nth-of-type(2) {
+        margin-left: 8em;
+        margin-top: -7em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #sectionmaps article li {
+        margin-right: .25em;
+        font-size: 1.25em;
+    }
+
+    #sectionmaps article p {
+        font-size: 2em;
+    }
+
+    #sectionmaps article a {
+        margin-left: 4.5em;
+    }
+
+    #sectionmaps article:last-of-type {
+        margin-bottom: 4em;
+    }
+
+    #sectionmaps .backtotop {
+        margin-bottom: 4em;
+    }
+
+}
+
+/****************************/
+/****************************/
+/* RESPONSIVE T&T MAX 1024PX*/
+/****************************/
+/****************************/
+
+@media only screen and (min-width: 769px) and (max-width: 1391px) {
+
+    #tipsandtricks h2 {
+        margin-top: 1em
+    }
+
+    #tipsandtricks select {
+        margin-top: 8em;
+    }
+
+    #tipsandtricks article:last-of-type {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1392px) and (max-width: 1439px) {
+
+    #tipsandtricks h2 {
+        margin-top: 1em
+    }
+
+    #tipsandtricks select {
+        margin-top: 8em;
+    }
+
+    #tipsandtricks article:last-of-type {
+        display: block;
+    }
+}
+
+/****************************/
+/****************************/
+/* RESPONSIVE FP MAX 1024PX */
+/****************************/
+/****************************/
+
+@media only screen and (min-width: 769px) and (max-width: 1439px) {
+
+    #findplayers h2 {
+        margin-top: 1em;
+    }
+
+    #findplayers section article {
+        display: block;
+    }
+
+    #findplayers article div {
+        max-width: 30em;
+    }
+
+    #findplayers .mainagent {
+        margin-top: -15em;
+        margin-left: 20em;
+    }
+
+    #findplayers .mainagent img {
+        width: 7em;
+        height: 7em;
+    }
+
+    #findplayers .mainagent img:nth-of-type(2) {
+        width: 7em;
+        height: 7em;
+    }
+
+}
+
+/****************************/
+/****************************/
+/*RESPONSIVE HOME MIN 1441PX*/
+/****************************/
+/****************************/
+
+@media only screen and (min-width: 1441px) {
+
+    h1 {
+        font-size: 5em;
+        margin-left: 10.5em;
+    }
+
+    header ul {
+        margin-left: 10em;
+    }
+
+    ul {
+        font-size: x-large;
+    }
+
+    p {
+        font-size: x-large;
+    }
+
+    #home section:first-of-type {
+        justify-content: space-around;
+    }
+
+    #home article {
+        width: 20vw;
+        height: 70vh;
+        animation-duration: 3s;
+    }
+
+    #home article img {
+        height: 60%;
+        margin-top: 0;
+    }
+
+    #home section a {
+        padding: 1em 3em;
+        font-size: x-large;
+    }
+
+    #home h2, #home h3 {
+        font-size: 6em;
+    }
+
+    section:nth-of-type(2) li {
+        font-size: 4em;
+    }
+
+    #home ol {
+        margin-top: 2em;
+    }
+
+    section:nth-of-type(2) img:first-of-type {
+        width: 55vw;
+        margin-top: -28em;
+        margin-right: -30em;
+    }
+
+    section:nth-of-type(2) img:nth-of-type(2) {
+        margin-top: -40em;
+    }
+
+    section:nth-of-type(3) p {
+        font-size: 3em;
+        margin-right: 2.5em;
+    }
+
+    section:last-of-type p {
+        font-size: 3em;
+    }
+
+}
+
+/****************************/
+/****************************/
+/*RESPONSIVE A&M MIN 1441PX */
+/****************************/
+/****************************/
+
+@media only screen and (min-width: 1441px) {
+
+    #sectionagents h2 {
+        font-size: 12em;
+        margin-top: .5em;
+    }
+
+    #sectionagents a {
+        padding: 1em 3em;
+        font-size: x-large;
+    }
+
+    #sectionagents article ul {
+        margin-left: -1em;
+    }
+
+    #sectionagents article a {
+        margin-left: 3em;
+    }
+
+    #sectionagents .backtotop {
+        border-radius: 2em;
+        margin-bottom: 2em;
+    }
+
+}
+
+/****************************/
+/****************************/
+/*RESPONSIVE M&A MIN 1441PX */
+/****************************/
+/****************************/
+
+@media only screen and (min-width: 1441px) {
+
+    #sectionmaps h2 {
+        font-size: 12em;
+        margin-top: .5em;
+    }
+
+    #sectionmaps a {
+        padding: 1em 3em;
+        font-size: x-large;
+    }
+
+    #sectionmaps article ul {
+        margin-left: -1em;
+    }
+
+    #sectionmaps article a {
+        margin-left: 3em;
+    }
+
+    #sectionmaps .backtotop {
+        border-radius: 2em;
+        margin-bottom: 2em;
+    }
+
+}
+
+/****************************/
+/****************************/
+/*RESPONSIVE T&T MIN 1441PX */
+/****************************/
+/****************************/
+
+@media only screen and (min-width: 1441px) {
+
+    #tipsandtricks h2 {
+        font-size: 12em;
+        margin-top: 1em;
+    }
+
+    #tipsandtricks select {
+        font-size: x-large;
+        margin-top: 5em;
+        margin-left: 0;
+        border-radius: 15px;
+    }
+
+    #tipsandtricks article {
+        width: 30vw;
+        height: 40vh;
+    }
+
+    #tipsandtricks article video {
+        height: 70%;
+    }
+
+    #tipsandtricks p {
+        font-size: xx-large;
+        margin-top: 1em;
+    }
+
+    #tipsandtricks article div {
+        margin-top: 2em;
+    }
+
+    #tipsandtricks article li {
+        font-size: xx-large;
+    }
+
+    #tipsandtricks article p:last-child {
+        font-size: xx-large;
+        margin-top: 0;
+    }
+
+}
+
+/****************************/
+/****************************/
+/* RESPONSIVE FP MIN 1441PX */
+/****************************/
+/****************************/
+
+@media only screen and (min-width: 1441px) {
+
+    #findplayers h2 {
+        font-size: 12em;
+        margin-top: 1em;
+    }
+
+    #findplayers select {
+        font-size: x-large;
+        margin-top: 5em;
+        margin-left: 1em;
+        margin-bottom: 2em;
+        border-radius: 15px;
+    }
+
+    #findplayers section:nth-of-type(2) {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #findplayers section article {
+        width: 45vw;
+    }
+
+    #findplayers footer {
+        margin-top: 4em;
+    }
+
+}

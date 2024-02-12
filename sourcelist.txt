@@ -1,0 +1,24 @@
+Naam: Jamie Tirbeni
+Studentnummer: 500891282
+Klas: Grafiet
+Schooljaar: 1
+
+LINK NAAR LIVE WEBSITE
+https://oege.ie.hva.nl/~tirbenj/
+
+WEB & DE WERELD ONDERDEEL
+1. Toegankelijkheid
+2. Animaties
+3. Responsive
+
+BRONVERMELDING
+1. https://blitz.gg/valorant/videos (Videos op de Tips & Tricks pagina)
+2. https://www.pcgamesn.com/valorant/characters-abilities (info over de agents en afbeeldingen)
+3. https://valorant.fandom.com/wiki/Maps (Info over de maps en afbeeldingen)
+4. https://playvalorant.com/en-us/ (Characters en Maps)
+5. https://developer.mozilla.org/en-US/docs/Web/CSS/::after (::after uitleg)
+6. https://www.w3schools.com/tags/tag_select.asp (Dropdown)
+7. https://stackoverflow.com/questions/3087975/how-to-change-the-cursor-into-a-hand-when-a-user-hovers-over-a-list-item (cursus pointer)
+8. https://valorant.fandom.com/wiki/Fade (Agent main foto's)
+9. https://www.pinterest.com/pin/818036719809769751/ (Kitana profile pic)
+10. https://www.facebook.com/SentinelsGG/ (Sentinels logo)
